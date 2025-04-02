@@ -1,0 +1,10 @@
+<div>
+  <h1><%= @message %></h1>
+</div>
+
+<div>
+  <%= form_with model: @test_model, url: test_create_path do |form| %>
+    <%= form.text_field :name %>
+    <%= form.submit %>
+  <% end %>
+</div>
