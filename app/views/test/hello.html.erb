@@ -1,5 +1,9 @@
 <div>
-  <h1><%= @message %></h1>
+  <% @received_message.each do |message| %>
+    <div>
+    <%= message.name %>
+    </div>
+    <% end %>
 </div>
 
 <div>
